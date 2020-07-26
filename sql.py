@@ -59,8 +59,8 @@ class sql_test (QtWidgets.QMainWindow, gui_sql.Ui_Form):
         cnxn = pyodbc.connect("DRIVER={SQL Server};"
                               "SERVER=10.76.1.35\SQLSERVER2012;"
                               "DATABASE=Orion;"
-                              "UID=sa;"
-                              "PWD=123456Bolid")
+                              "UID=;"
+                              "PWD=")
         cursor = cnxn.cursor()
         cursor2 = cnxn.cursor()
         vir = "SELECT ID,NAME,FirstName,MidName FROM [dbo].[pList] WHERE NAME='"+ lname +"'"
@@ -100,8 +100,8 @@ class sql_test (QtWidgets.QMainWindow, gui_sql.Ui_Form):
         cnxn = pyodbc.connect("DRIVER={SQL Server};"
                               "SERVER=10.76.1.35\SQLSERVER2012;"
                               "DATABASE=Orion;"
-                              "UID=sa;"
-                              "PWD=123456Bolid")
+                              "UID=;"
+                              "PWD=")
         cursor = cnxn.cursor()
         for i in range(len(boxobox)):
              index = boxobox[i].currentText()
